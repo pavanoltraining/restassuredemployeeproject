@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+
+<suite name="EmployeesRestAPISuite">
+<listeners>
+	<listener class-name="com.employeeapi.utilities.Listeners" />
+</listeners>
+	<test thread-count="5" name="EmployeesRestAPITest">
+		<classes>
+			<class name="com.employeeapi.testCases.TC001_Get_All_Employees" />
+			<class name="com.employeeapi.testCases.TC002_Get_Single_Employee_Record" />
+			<class name="com.employeeapi.testCases.TC003_Post_Employee_Record" />
+			<class name="com.employeeapi.testCases.TC004_Put_Employee_Record" />
+			<class name="com.employeeapi.testCases.TC005_Delete_Employee_Record" />
+
+		</classes>
+	</test> <!-- Test -->
+</suite> <!-- Suite -->
